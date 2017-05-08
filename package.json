@@ -22,5 +22,10 @@
   "homepage": "https://github.com/ULL-ESIT-DSI-1617/eliminando-switch-smell-edna-joseluis-kevin-35l2v3#readme",
   "dependencies": {
     "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "karma": "^1.7.0",
+    "mocha": "^3.3.0"
   }
 }
