@@ -1,68 +1,35 @@
-# Práctica 7: Eliminando Switch Smell
+[![Build Status](https://travis-ci.org/ULL-ESIT-DSI-1617/evaluar-karma-alu0100821390.svg?branch=master)](https://travis-ci.org/ULL-ESIT-DSI-1617/evaluar-karma-alu0100821390)
 
+# Evaluar Karma
 
-## Requisitos
+## Aceptar tarea
 
-Modifique el código de la práctica anterior de manera que:
+* [Aceptar asignación de la tarea](https://classroom.github.com/assignment-invitations/e7436aae3df7527a80a8cabe8ec26e2d)
 
-* Se eliminen todos los Switch Smell
-* Se eliminen todas las debilidades señaladas en la sección Debilidades
-* Se distribuyan las clases en ficheros separados de una manera racional
-* Recuerde que un requisito de la práctica anterior era que el constructor de Medida pudiera llamarse con un sólo argumento:
+### Forma de trabajo
 
+* Use su portátil o su cuenta en c9 para llevar a cabo los objetivos planteados.
+* Esta práctica se divide en objetivos o hitos:  indique al profesor  cuando ha terminado y suba los enlaces a los repos y despliegues.
 
-```
-console.log(new Medida("32F")); // Prueba polimorfismo del constructor de Medida
-```
+## Hitos
 
-La expresión regular necesaria para usar es un prefijo de la expresión regular usada en la conversión. Se plantea así el requisito de reciclar la expresión regular factorizando el código de las mismas.
-
-*En esta tarea no se pide que use pruebas, ni cubrimiento, ni Karma ni Travis.
+* Use para la entrega el repo de GitHub dado por la asignación de esta tarea.
+* Parta del repo de la práctica del conversor de temperatura
+* Añada pruebas si no las tenía
+* Añada Karma
+* Añada integración continua usando Travis
+* Añada a su README.md un badge Travis indicando el estado de las pruebas en Travis y enlazando a las mismas.
+* Entrege los enlaces al repo en GitHub y a Travis
 
 
 
 ## Recursos
 
-* [Apuntes: Code Smells](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/patterns/codesmell.html).
-* [Apuntes: Principios de Diseño SOLID](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/patterns/designprinciples.html)
-* [Apuntes: Design patterns](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/patterns/).
-
-
-## Despliegues
-
-[Despliegue en gh-pages](https://ull-esit-dsi-1617.github.io/eliminando-switch-smell-edna-joseluis-kevin-35l2v3/)
-
-[Despliegue en Heroku](https://eliminando-switch-smell.herokuapp.com/) - Edna Liliana Galiano Camacho
-
-[Despliegue en Heroku](https://eliminando-smell.herokuapp.com/) - José Luis Doblado González
-
-[Despliegue en Heroku](https://eliminando-switch-smells.herokuapp.com/) - Kevin Estévez Expósito
-
-[Despliegue en Iaas](http://10.6.128.144:8084/) - Edna Liliana Galiano Camacho
-
-[Despliegue en Iaas](http://10.6.128.38:8081/) - José Luis Doblado González
-
-[Despliegue en Iaas](http://10.6.128.96:8088/) - Kevin Estévez Expósito
-
-## Asignatura DSI ULL
-
-[Desarrollo de Sistemas Informáticos](https://campusvirtual.ull.es/1617/course/view.php?id=1136)
-
-## Enlace descripción Práctica
-
-[Práctica 7](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/practicas/practicanoswitchsmell.html)
-
-## Autores
-
-José Luis Doblado González  
-* [Github](https://github.com/alu0100767001)
-* [Pagina personal](https://alu0100767001.github.io/dsi-joseluis/)
-
-
-Edna Liliana Galiano Camacho  
-* [Github](https://github.com/ednagc)
-* [Pagina personal](https://ednagc.github.io/edna-galiano/)
-
-Kevin Estévez Expósito  
-* [Github](https://github.com/alu0100821390)
-* [Pagina personal](http://alu0100821390.github.io)
+* [Práctica: Conversor de Temperaturas con Karma y Travis](http://crguezl.github.io/pl-html/node10.html)
+* [Introducción a karma js](http://www.mmfilesi.com/blog/introduccion-a-karma-js/)
+* [crguezl/ull-etsii-grado-pl-1213-temperature-converter](https://github.com/crguezl/ull-etsii-grado-pl-1213-temperature-converter/tree/karma)
+* [ULL-ESIT-GRADOII-DSI/karma-y-travis-rafa-pedro-dani_2](https://github.com/ULL-ESIT-GRADOII-DSI/karma-y-travis-rafa-pedro-dani_2/tree/dev)
+* [Apuntes viejos del profesor: Mocha y Chai en el navegador](http://crguezl.github.io/pl-html/node9.html#SECTION041200190000000000000)
+* [Apuntes: Pruebas. Mocha](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/pruebas/mocha.html)
+* [Apuntes: Pruebas. Should](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/pruebas/mocha.html#shouldl)
+* [Apuntes: Integración Contínua. Travis](https://casianorodriguezleon.gitbooks.io/ull-esit-1617/content/apuntes/pruebas/travis.html)

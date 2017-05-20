@@ -1,5 +1,14 @@
 module.exports = function(config) {
-	config.set({
+	var options = {
+		
+		plugins: [
+			'karma-chrome-launcher',
+			'karma-firefox-launcher',
+			'karma-html2js-preprocessor',
+			'karma-mocha',
+			'karma-chai'
+		],
+		
 
 		// base path that will be used to resolve all patterns (eg. files, exclude)
 		basePath: '',
@@ -65,7 +74,10 @@ module.exports = function(config) {
 
 		// start these browsers
 		// available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-		browsers: ['Chrome', 'Firefox'],
+		browsers: [
+			'Chrome',
+			'Firefox'
+		],
 
 
 		// If browser does not capture in given timeout [ms], kill it
@@ -79,5 +91,21 @@ module.exports = function(config) {
 		// Concurrency level
 		// how many browser should be started simultaneous
 		concurrency: Infinity
-	})
-}
+	};
+	
+	if (process.env.TRAVIS) {
+		options.customLaunchers = {
+			Chrome_travis_ci: {
+				base: 'Chrome',
+				flags: ['--no-sandbox']
+			}
+		};
+		options.browsers = [
+			'Chrome_travis_ci',
+			'Firefox'
+		];
+	}
+  
+	config.set(options);
+};
+	
